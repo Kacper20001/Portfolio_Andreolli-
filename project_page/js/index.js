@@ -49,7 +49,7 @@ const triggerFlipOnScroll = (galleryEl, options) => {
 	const galleryCaption = galleryEl.querySelector('.caption');
 	const galleryItems = galleryEl.querySelectorAll('.gallery__item');
 	const galleryItemsInner = [...galleryItems].map(item => item.children.length > 0 ? [...item.children] : []).flat();
-	
+
 	// Temporarily add the final class to capture the final state
 	galleryEl.classList.add('gallery--switch');
 	const flipstate = Flip.getState([galleryItems, galleryCaption], {props: 'filter, opacity'});
@@ -77,7 +77,7 @@ const triggerFlipOnScroll = (galleryEl, options) => {
 	// If there are inner elements in the gallery items, animate them too
 	if ( galleryItemsInner.length ) {
 		tl.fromTo(galleryItemsInner, {
-			scale: 2
+			scale: 1
 		}, {
 			scale: 1,
 			scrollTrigger: {
