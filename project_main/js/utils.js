@@ -5,9 +5,9 @@ const preloadImages = (selector = 'img') => {
     });
 };
 //move to page
-document.getElementById('goToProject2').addEventListener('click', function() {
+/*document.getElementById('goToProject2').addEventListener('click', function() {
 	window.location.href = '../project_page/index.html';
-});
+});*/
 
 // Helper function that lets you dynamically figure out a grid's rows/columns as well as further refine those with "odd" or "even" ones
 // https://greensock.com/forums/topic/34808-how-can-i-animate-the-odd-and-even-columns-rows-of-a-grid-with-gsapto/?do=findComment&comment=174346
