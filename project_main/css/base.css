@@ -284,7 +284,7 @@ body #cdawrap {
 }
 
 .intro {
-	height: calc(100vh - 3rem);
+	height: calc(100vh - 9rem);
     text-align: center;
     place-items: center;
     display: grid;
@@ -390,20 +390,20 @@ body #cdawrap {
 	font-family: "source-serif", serif;
 	font-weight: 400;
 }
-.amazon_title {
+.project_title {
 	font-size: 8rem;
 	margin-top: -15%;
 }
-.amazon_subtitle {
+/*.project_subtitle {
 	font-weight: 300;
-	/*font-size: clamp(1.5rem, 15vw, 6.5rem);*/
+	!*font-size: clamp(1.5rem, 15vw, 6.5rem);*!
 	font-size: 3.5rem;
 	color: white;
 	font-family: "raleway", serif;
 	margin-top: -16%;
 	margin-bottom: 0;
 	font-style: italic;
-}
+}*/
 
 .content__title--top {
 	align-items: start;
@@ -465,7 +465,16 @@ body #cdawrap {
 	/*background-size: cover;*/
 	background-position: 50% 50%;
 }
+.grid--1 {
+	margin-top: -28%;
+}
 
+.grid--2 {
+	margin-top: -60%;
+}
+.grid--3 {
+	margin-top: -75%;
+}
 @media screen and (min-width: 53em) {
 	.frame {
 		grid-template-columns: auto auto auto 1fr;

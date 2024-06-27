@@ -38,9 +38,16 @@ h1 {
 	text-transform: uppercase;
 }
 
-
 .navbar a:hover {
 	background-color: #ccc;
+}
+
+.arrows {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 70px;
+	margin-top: -3%;
 }
 
 body {
@@ -287,7 +294,7 @@ body #cdawrap {
 						 'title'
 						 'label-mission' 
 						 'mission';
-	
+	margin-top: 0;
 }
 
 .project--details {
