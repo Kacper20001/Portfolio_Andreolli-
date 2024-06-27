@@ -78,8 +78,9 @@ h1 {
 	border-radius: 40px;
 	font-weight: 600;
 	font-size: 17px;
-	text-transform: uppercase;
 	margin-right: 10px;
+	text-transform: uppercase;
+	font-family: "raleway", serif;
 }
 .new_page_buttons a:hover {
 	background-color: #ccc;
