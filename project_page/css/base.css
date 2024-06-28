@@ -39,8 +39,9 @@ h1 {
 }
 
 .navbar a:hover {
-	background-color: #ccc;
+	background-color: #ccc !important;
 }
+
 
 .arrows {
 	display: flex;
@@ -152,34 +153,36 @@ a {
 	color: var(--color-link);
 	outline: none;
 	cursor: pointer;
+	background-color: transparent;
 }
 
-a:hover {
+/*a:hover {
 	color: var(--color-link-hover);
 	outline: none;
 }
 
-/* Better focus styles from https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible */
+!* Better focus styles from https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible *!
 a:focus {
-	/* Provide a fallback style for browsers
-	 that don't support :focus-visible */
+	!* Provide a fallback style for browsers
+	 that don't support :focus-visible *!
 	outline: none;
-	background: lightgrey;
+	!*background: lightgrey;*!
+	background: transparent;
 }
 
 a:focus:not(:focus-visible) {
-	/* Remove the focus indicator on mouse-focus for browsers
-	 that do support :focus-visible */
+	!* Remove the focus indicator on mouse-focus for browsers
+	 that do support :focus-visible *!
 	background: transparent;
 }
 
 a:focus-visible {
-	/* Draw a very noticeable focus style for
+	!* Draw a very noticeable focus style for
 	 keyboard-focus on browsers that do support
-	 :focus-visible */
+	 :focus-visible *!
 	outline: 2px solid red;
 	background: transparent;
-}
+}*/
 
 main {
 	position: relative;
