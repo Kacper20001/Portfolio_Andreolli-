@@ -48,7 +48,8 @@ const triggerFlipOnScroll = (galleryEl, options) => {
 	// Select elements within the gallery that will be animated
 	const galleryCaption = galleryEl.querySelector('.caption');
 	const galleryItems = galleryEl.querySelectorAll('.gallery__item');
-	const galleryItemsInner = [...galleryItems].map(item => item.children.length > 0 ? [...item.children] : []).flat();
+	const galleryItemsInner = [...galleryItems].map(item => item.children.length > 0 ? [...item.children] : []).flat()
+
 
 	// Temporarily add the final class to capture the final state
 	galleryEl.classList.add('gallery--switch');
@@ -105,7 +106,9 @@ const scroll = () => {
         { id: '#gallery-6' },
         { id: '#gallery-7' },
         { id: '#gallery-8', options: { flip: { scale: false } } },*/
-        { id: '#gallery-9' },
+/*
+        { id: '#gallery-9' }
+*/
     ];
 
     // Loop through the galleries and apply the scroll-triggered animations
