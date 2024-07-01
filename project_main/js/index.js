@@ -249,7 +249,49 @@ const applyAnimation = (grid, animationType) => {
 			})
 
 			break;
-	  	
+		case 'type7':
+
+			// Set some CSS related style values
+			grid.style.setProperty('--grid-width', '50%');
+			grid.style.setProperty('--perspective', '3000px');
+			grid.style.setProperty('--grid-item-ratio', '0.8');
+			grid.style.setProperty('--grid-columns', '3');
+			grid.style.setProperty('--grid-gap', '1vw');
+
+			timeline
+				.set(gridWrap, {
+					transformOrigin: '0% 50%',
+					rotationY: 30,
+					xPercent: -75
+				})
+				.set(gridItems, {
+					transformOrigin: '50% 0%'
+				})
+				.to(gridItems, {
+					duration: 0.5,
+					ease: 'power2',
+					z: 500,
+					stagger: 0.04
+				}, 0)
+				.to(gridItems, {
+					duration: 0.5,
+					ease: 'power2.in',
+					z: 0,
+					stagger: 0.04
+				}, 0.5)
+				.fromTo(gridItems, {
+					rotationX: -70,
+					filter: 'brightness(120%)'
+				}, {
+					duration: 1,
+					rotationX: 70,
+					filter: 'brightness(0%)',
+					stagger: 0.04
+				}, 0)
+
+			break;
+
+
 		default:
 			console.error('Unknown animation type.');
 			break;
@@ -261,7 +303,7 @@ const scroll = () => {
 	grids.forEach((grid, i) => {
 		// Determine animation type
 		let animationType;
-		switch (i % 6) {
+		switch (i % 7) {
 			case 0:
 				animationType = 'type1';
 				break;
@@ -279,6 +321,9 @@ const scroll = () => {
 				break;
 			case 5:
 				animationType = 'type6';
+				break;
+			case 6:
+				animationType = 'type7'
 				break;
 		}
 		applyAnimation(grid, animationType);
