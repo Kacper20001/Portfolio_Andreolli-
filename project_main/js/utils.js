@@ -6,7 +6,7 @@ const preloadImages = (selector = 'img') => {
 };
 //move to page
 /*document.getElementById('goToProject2').addEventListener('click', function() {
-	window.location.href = '../project_page/index.html';
+	window.location.href = '../AMAZON_page/index.html';
 });*/
 
 // Helper function that lets you dynamically figure out a grid's rows/columns as well as further refine those with "odd" or "even" ones
