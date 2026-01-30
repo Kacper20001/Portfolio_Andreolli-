@@ -16,7 +16,7 @@
 - HTML5
 - CSS3
 - JavaScript (ES6+)
-- Three.js (opcjonalnie)
+- Three.js 
 - Git
 
 ## 💻 Wymagania
